@@ -1,0 +1,595 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "gumbo";
+  src: url("../public/Mystery-Day\ 400.ttf");
+}
+
+body {
+  background-image: url("../public/bodybg.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-family: "gumbo";
+  letter-spacing: 1px;
+}
+
+.btn-wallet {
+  background-image: url("../public/button.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+  color: rgb(223, 223, 223);
+  width: 160px;
+  height: 52px;
+  border-radius: 40px;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.btn-wallet-address {
+  background-image: url("../public/walletaddress.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+  color: rgb(215, 215, 215);
+  width: 175px;
+  height: 52px;
+  border-radius: 40px;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.img-option {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+.img-asix {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+.img-header {
+  width: 120px;
+  height: 120px;
+  margin-right: 10px;
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+.btn-wallet-address:hover {
+  color: white;
+}
+
+.btn-wallet:disabled {
+  color: rgb(206, 206, 206);
+}
+
+.btn-switch {
+  background-image: url("../public/circle_button.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border-radius: 100%;
+  color: rgb(232, 232, 232);
+  width: 50px;
+  height: 50px;
+  border: none;
+  font-family: "gumbo";
+  padding-top: 5px;
+  padding-bottom: 1px;
+  font-size: 30px;
+}
+
+.btn-switch:hover {
+  color: white;
+}
+
+.btn-max {
+  background-image: url("../public/circle_button.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border-radius: 100%;
+  color: rgb(232, 232, 232);
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-right: 5%;
+  font-family: "gumbo";
+  font-size: 16px;
+  margin-bottom: 3%;
+}
+
+.btn-max:hover {
+  color: white;
+}
+
+.form {
+  border-radius: 25px;
+  border: 1px solid #a88467 !important;
+  height: 45px;
+  background: #dcbf9d7e !important;
+  color: #9c785b !important;
+  font-size: 20px !important;
+}
+
+.input-group .form-control {
+  border-radius: 25px;
+  border: none !important;
+  border-left: none !important;
+  height: 45px;
+  background: none !important;
+  color: #9c785b !important;
+  font-size: 20px !important;
+}
+
+.input-group-text {
+  border-radius: 25px;
+  border: none !important;
+  border-right: none !important;
+  height: 45px;
+  background: none !important;
+  color: #9c785b !important;
+  padding-right: 0;
+}
+
+label {
+  color: #9c785b;
+}
+
+.card {
+  height: 432px;
+  background-image: url("../public/card2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.card-header {
+  text-align: center;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  padding-top: 25px;
+  font-family: "gumbo";
+  border: none;
+}
+
+.card-body {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.info {
+  color: #a27e63 !important;
+}
+
+.disabled {
+  cursor: not-allowed !important;
+}
+
+@media (max-width: 1199px) {
+
+  .card-body {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+  }
+  .card-header {
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 50px;
+    font-size: 20px;
+  }
+  .card {
+    background-image: url("../public/cardMax320.png");
+    background-size: contain;
+    background-position: center;
+    margin-top: -50px;
+    margin-bottom: 10px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .card-body {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+  }
+  .card-header {
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 50px;
+    font-size: 20px;
+  }
+  .card {
+    background-image: url("../public/cardMax320.png");
+    background-size: contain;
+    background-position: center;
+    margin-top: -50px;
+    margin-bottom: 10px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .card-body {
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 40px;
+  }
+  .card-header {
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    font-size: 20px;
+  }
+  .card {
+    background-image: url("../public/cardMax320.png");
+    background-size: contain;
+    background-position: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 500px;
+  }
+}
+@media (max-width: 767px) {
+
+  .card-body {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 40px;
+  }
+  .card-header {
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    font-size: 20px;
+  }
+  .card {
+    background-image: url("../public/cardMax320.png");
+    background-size: contain;
+    background-position: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .card-body {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+  }
+  .card-header {
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    font-size: 20px;
+  }
+  .card {
+    background-image: url("../public/cardMax320.png");
+    background-size: contain;
+    background-position: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .card-body {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 40px;
+  }
+  .card-header {
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    font-size: 20px;
+  }
+  .card {
+    background-image: url("../public/cardMax320.png");
+    background-size: contain;
+    background-position: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 520px) {
+
+  .img-asix {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    margin-left: -8px;
+    margin-bottom: 3px;
+  }
+
+  .card-body {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+  }
+  .card-header {
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 28px;
+    font-size: 20px;
+  }
+  .card {
+    background-image: url("../public/cardMax320.png");
+    background-size: contain;
+    background-position: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 500px;
+  }
+}
+
+
+@media (max-width: 470px) {
+
+  .img-asix {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    margin-left: -8px;
+    margin-bottom: 3px;
+  }
+  
+  .img-header {
+    width: 70px;
+    height: 70px;
+    margin-right: 5px;
+  }
+  .card-body {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+  }
+  .card-header {
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 28px;
+    font-size: 20px;
+  }
+  .card {
+    background-image: url("../public/cardMax320.png");
+    background-size: contain;
+    background-position: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 425px) {
+  
+  .img-header {
+    width: 70px;
+    height: 70px;
+    margin-right: 5px;
+  }
+  .card-body {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .card-header {
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    font-size: 16px;
+  }
+  .card {
+    background-image: url("../public/cardMax320.png");
+    background-size: contain;
+    background-position: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 430px;
+
+  }
+}
+
+@media (max-width: 400px) {
+  
+  .img-header {
+    width: 70px;
+    height: 70px;
+    margin-right: 5px;
+  }
+  .card-body {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .card-header {
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 25px;
+    font-size: 16px;
+  }
+  .card {
+    background-image: url("../public/cardMax320.png");
+    background-size: contain;
+    background-position: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 430px;
+
+  }
+  .btn-switch {
+    margin-top: -10px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+  .btn-wallet {
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+  }
+  .btn-wallet-address {
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 380px) {
+  .form {
+    height: 35px;
+  }
+  .input-group .form-control {
+    height: 35px;
+  }
+  
+  .input-group-text {
+    height: 35px;
+  }
+  
+  .img-asix {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-left: -8px;
+    margin-bottom: 3px;
+  }
+  
+  .img-header {
+    width: 70px;
+    height: 70px;
+    margin-right: 5px;
+  }
+  .card-body {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .card-header {
+    padding-left: 25px;
+    padding-bottom: 5px;
+    padding-top: 43px;
+    font-size: 16px;
+  }
+  .card {
+    background-image: url("../public/cardMax320.png");
+    background-size: contain;
+    background-position: center;
+    margin-top: 5px;
+    margin-bottom: -5px;
+    height: 430px;
+
+  }
+  .btn-switch {
+    margin-top: -10px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+  .btn-wallet {
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+  }
+  .btn-wallet-address {
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 345px) {
+  .form {
+    height: 35px;
+  }
+  .input-group .form-control {
+    height: 35px;
+  }
+  
+  .input-group-text {
+    height: 35px;
+  }
+  
+  .img-asix {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-left: -8px;
+    margin-bottom: 3px;
+  }
+  
+  .img-header {
+    width: 70px;
+    height: 70px;
+    margin-right: 5px;
+  }
+  .card-body {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+  }
+  .card-header {
+    padding-left: 25px;
+    padding-top: 57px;
+    font-size: 16px;
+  }
+  .card {
+    background-image: url("../public/cardMax320.png");
+    background-size: contain;
+    background-position: center;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    height: 422px;
+  }
+  .btn-switch {
+    margin-top: -10px;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+  .btn-wallet {
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+  }
+  .btn-wallet-address {
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+  }
+  .div-wallet {
+    margin: auto !important;
+  }
+}
